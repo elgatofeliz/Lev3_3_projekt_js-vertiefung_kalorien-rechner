@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev3_3_projekt_js-vertiefung_kalorien-rechner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h2>Kalorienrechner</h2>
+        </section>
+        <section>
+            <label for="körpergewicht">Körpergewicht in kg: </label>
+            <input type="number" name="" id="körpergewicht">
+        </section>
+        <section>
+            <label for="körpergröße">Körpergröße in cm: </label>
+            <input type="number" name="" id="körpergröße">
+        </section>
+        <section>
+            <label for="alter">Alter in jahren: </label>
+            <input type="number" id="alter">
+        </section>
+        <section>
+            <input type="radio" name="asd" id="male">
+            <label for="male">männlich</label>
+            <input type="radio" name="asd" id="female">
+            <label for="female">weiblich</label>
+        </section>
+        <section>
+            <label for="pal">Physisches aktivitäts-level</label>
+            <select name="" id="pal">
+                <option value="0.95">Schlafen</option>
+                <option value="1.2">Nur Sitzen oder Liegen</option>
+                <option value="1.5">Ausschließlich sitzende Tätigkeit</option>
+                <option value="1.7">Sitzend und bewegungs ausgeglichen</option>
+                <option value="1.9">Überwiegend in bewegung</option>
+                <option value="2.2">Körperlich anstrengende Arbeit</option>
+            </select>
+        </section>
+        <section>
+            <button type="submit" onclick="calc()">Wie viele Kekse darf ich essen??</button>
+            <p id="nope"></p>
+        </section>
+        <section>
+            <h4>Grundumsatz</h4>
+            <p id="grund"></p>
+            <h4>Gesamtumsatz</h4>
+            <p id="gesamt"></p>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
